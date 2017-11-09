@@ -1,3 +1,91 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**************/
+/*** Global ***/
+/**************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+  color: #e60000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.anchor {
+  padding-top: 75px;
+}
+
+/******************/
+/*** Navigation ***/
+/******************/
+.navbar-default {
+  background-color: #ccdeff;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand a {
+  color: #e60000;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #ccdeff;  
+  color: #e60000; 
+  border-bottom: 5px solid #e60000;
+  font-weight: bolder;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #e60000;
+  font-weight: bolder; 
+  background-color: #fff;
+  border-bottom: 5px solid #fff; 
+}
+
+.navbar-brand a {
+  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.navbar-brand a:hover {
+  color: red;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e60000;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus  {
+  background-color: #ccdeff;
+}
+
+/**************/
+/*** Footer ***/
+/**************/
+footer {
+  font-family: 'Open Sans Condensed';
+  background-color: #ccdeff;
+  padding: 15px;
+}
+
+ 
