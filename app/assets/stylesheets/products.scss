@@ -1,0 +1,47 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/****************/
+/*** Products ***/
+/****************/
+.products-list {
+  width: 90%;
+  margin: auto;
+}
+
+.products-list table {
+  width: 100%;
+  margin: auto;
+}
+
+.products-list table > thead > tr {
+  font-size: 1.2em;
+  color: #e60000;
+  font-family: 'Josefin Sans', Helvetica, serif;
+}
+
+.products-list table > thead > tr,
+.products-list table > tbody > tr {
+  border-bottom: #eee 1px dotted;
+  
+}
+
+
+.products-list table > tbody > tr > td {
+  padding-right: 10px;
+}
+
+.product-show {
+  width: 90%;
+}
+
+.product-name {
+  color: #e60000;
+  font-size: 1.3em;
+}
+
+
+
+
+
