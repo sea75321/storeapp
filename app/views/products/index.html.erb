@@ -9,7 +9,7 @@
       <%= image_tag("#{product.image_url}", class: "img-responsive") %>
       <%= product.name %>
       <br>
-      $<%= product.price %>
+      <%= number_to_currency(product.price) %>
       </div><% end %><!-- end link_to product -->
       <div class="visible-xs-block">
         <div class="product-anchor">&nbsp;<hr></div>
