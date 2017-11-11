@@ -5,23 +5,26 @@
   <div class="row">
     <% @products.each do |product| %>
      <%= link_to product  do %>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-clickable product-anchor">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-clickable product-anchor">
       <%= image_tag("#{product.image_url}", class: "img-responsive") %>
       <%= product.name %>
       <br>
       <%= number_to_currency(product.price) %>
-      </div><% end %><!-- end link_to product -->
+      </div>
       <div class="visible-xs-block">
         <div class="product-anchor">&nbsp;<hr></div>
       </div>
+      <% end %><!-- end link_to product -->
+
 <!--
-	  <%= link_to 'Show', product %>
-	  <%= link_to 'Edit', edit_product_path(product) %>
-	  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Show', product %>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 -->
-    <% end %><!--end @products.each -->
+  <% end %><!--end @products.each -->
   </div><!-- end row -->
-  <div class="anchor"></div>
+
+      <div class="anchor"></div>
   
   <%= link_to 'New Product', new_product_path %>
 

@@ -6,14 +6,17 @@
 /*** Products ***/
 /****************/
 .product-clickable {
+  height: 400px;
   text-align: center;
   display: block;
   margin: auto;
-  font-size: 1.4em;
+  font-size: 1.3em;
+  padding: 5%;
 }
 
 .product-clickable img {
   margin: auto;
+  max-height: 100%;
 }
 
 .products-list {
@@ -22,7 +25,7 @@
 }
 
 .product-anchor {
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 .product-img img {
