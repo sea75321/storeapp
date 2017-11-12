@@ -1,22 +1,22 @@
-<div class="container product-show">
+<div class="container product-show anchor">
   <div class="row">
     <p id="notice"><%= notice %></p>
 
     <div class="visible-xs-block">
-      <p class="product-name">
+      <h2>
         <%= @product.name %>
-      </p>
+      </h2>
     </div>
     <div class="col-sm-6 col-xs-12">
       <%= image_tag(@product.image_url, class: "img-responsive product-img") %>
     </div>
     <div class="col-sm-6 col-xs-12">
       <div class="hidden-xs">
-        <p class="product-name">
+        <h2>
           <%= @product.name %>
-        </p>
+        </h2>
       </div>
-      <div class="product-anchor"></div>
+     
       <div>
         <p>
           <strong>Description:</strong>
@@ -46,3 +46,4 @@
 
   </div><!-- end row -->
 </div><!-- end .container .product-show -->
+<div class="anchor"></div>

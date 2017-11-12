@@ -6,7 +6,6 @@
 /*** Products ***/
 /****************/
 .product-clickable {
-  height: 400px;
   text-align: center;
   display: block;
   margin: auto;
@@ -14,14 +13,13 @@
   padding: 5%;
 }
 
+.product-clickable.col-sm-6 {
+  height: 400px;
+}
+
 .product-clickable img {
   margin: auto;
   max-height: 100%;
-}
-
-.products-list {
-  width: 100%;
-  margin: auto;
 }
 
 .product-anchor {
@@ -40,11 +38,11 @@
 
 .product-show img {
   margin: auto;
+  padding-bottom: 5%;
 }
 
-.product-name {
-  color: #e60000;
-  font-size: 1.5em;
+.product-show strong {
+  font-weight: bold;
 }
 
 .visible-xs-block .product-name {
@@ -53,6 +51,11 @@
 
 /*** Table Style for Default Generated Index Page ***/
 /*
+.products-list {
+  width: 100%;
+  margin: auto;
+}
+
 .products-list table {
   width: 100%;
   margin: auto;

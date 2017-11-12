@@ -13,16 +13,22 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
   color: #e60000;
+}
+
+h1 {  
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h2 {
-  text-align: center;
-  color: #333;
+  font-weight: bold;
 }
 
 a {
@@ -34,7 +40,7 @@ a:hover {
 }
 
 .anchor {
-  padding-top: 75px;
+  padding-top: 55px;
   clear: both;
 }
 
@@ -44,6 +50,7 @@ a:hover {
 .navbar-default {
   background-color: #ccdeff;
   border: none;
+  height: 55px;
 }
 
 .navbar-default .navbar-nav > li > a,
@@ -86,6 +93,42 @@ a:hover {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus  {
   background-color: #ccdeff;
+}
+
+/**********************/
+/*** Image Carousel ***/
+/**********************/
+.carousel {
+  margin: 0% 20%;
+}
+
+.carousel-inner .item {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-inner .item img {
+  display: block;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 25%;  
+}
+
+.carousel-inner .carousel-caption {
+  text-shadow: none;
+}
+
+.carousel-indicators li {
+  border: #f00 solid 2px;
+}
+
+.carousel-control .glyphicon {
+  color: #f00;
+}
+
+.carousel-control {
+  background-image: none !important;
+  outline: none;
 }
 
 /**************/
