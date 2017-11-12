@@ -31,6 +31,10 @@ h2 {
   font-weight: bold;
 }
 
+h4 {
+  margin: 0px;
+}
+
 a {
   color: #e60000;
 }
@@ -99,7 +103,7 @@ a:hover {
 /*** Image Carousel ***/
 /**********************/
 .carousel {
-  margin: 0% 20%;
+  margin: 0% 15%;
 }
 
 .carousel-inner .item {
@@ -111,11 +115,17 @@ a:hover {
   display: block;
   margin: auto;
   padding-top: 5%;
-  padding-bottom: 25%;  
+  padding-bottom: 15%;
+  
 }
 
 .carousel-inner .carousel-caption {
   text-shadow: none;
+}
+
+.carousel-indicators {
+  bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .carousel-indicators li {

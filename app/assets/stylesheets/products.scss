@@ -10,7 +10,7 @@
   display: block;
   margin: auto;
   font-size: 1.3em;
-  padding: 5%;
+  padding-top: 5%;
 }
 
 .product-clickable.col-sm-6 {
@@ -38,15 +38,16 @@
 
 .product-show img {
   margin: auto;
-  padding-bottom: 5%;
+  padding: 5% 0%;
 }
 
 .product-show strong {
   font-weight: bold;
 }
 
-.visible-xs-block .product-name {
+.visible-xs-block h2 {
   text-align: center;
+  margin: auto;
 }
 
 /*** Table Style for Default Generated Index Page ***/
