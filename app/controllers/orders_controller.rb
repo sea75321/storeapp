@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
 
 	def index
+		redirect_to "/simple_pages/landing_page"
 	end
 
 	def show

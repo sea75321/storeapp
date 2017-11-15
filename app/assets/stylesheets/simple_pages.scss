@@ -57,6 +57,10 @@ a:hover {
   height: 55px;
 }
 
+.navbar-default .navbar-nav {
+  background-color: #ccdeff;
+}
+
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand a {
   color: #e60000;
@@ -141,6 +145,35 @@ a:hover {
   outline: none;
 }
 
+
+/********************/
+/*** Contact Page ***/
+/********************/
+.contact {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.contact p {
+  text-align: center;
+}
+
+
+/********************/
+/*** About Page ***/
+/********************/
+.about {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.about p {
+  text-align: left;
+}
+
+
 /**************/
 /*** Footer ***/
 /**************/
@@ -150,4 +183,3 @@ footer {
   padding: 15px;
 }
 
- 

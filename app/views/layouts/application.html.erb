@@ -36,9 +36,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="<%= 'active' if current_page?(root_path) %>"><a href="<%= root_path %>">Home<span class="sr-only">(current)</span></a></li>
+              <li class="<%= 'active' if current_page?(products_path) %>"><a href="<%= products_path %>">Products</a></li>
+              <li class="<%= 'active' if current_page?(orders_path) %>"><a href="<%= orders_path %>">Orders</a></li>
+              <li class="<%= 'active' if current_page?(simple_pages_about_path) %>"><a href="<%= simple_pages_about_path %>">About</a></li> 
+              <li class="<%= 'active' if current_page?(simple_pages_contact_path) %>"><a href="<%= simple_pages_contact_path %>">Contact</a></li>
             </ul>
 
           </div><!-- /.navbar-collapse -->
