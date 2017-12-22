@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
 
 	def index
-		redirect_to "/simple_pages/landing_page"
+		@orders = Order.includes(:product).all
 	end
 
 	def show
