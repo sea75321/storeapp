@@ -14,13 +14,13 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="navbar-collapse-1">
-    <form class="navbar-right navbar-form">
+    <div class="navbar-right navbar-form">
       <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
         <%= form.label :q, ''%>
-        <%= form.text_field :q, id: 'q', value: params[:q] %>
+        <%= form.text_field :q, id: 'q', value: params[:q], placeholder: "Search" %>
         <%= form.submit 'Search' %>
       <% end %>
-    </form>
+    </div>
     <ul class="nav navbar-nav navbar-right">
       <li class="<%= 'active' if current_page?(root_path) %>"><a href="<%= root_path %>">Home<span class="sr-only">(current)</span></a></li>
       <li class="<%= 'active' if current_page?(products_path) %>"><a href="<%= products_path %>">Products</a></li>

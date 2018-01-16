@@ -9,7 +9,13 @@ Rails.application.routes.draw do
 
   get 'simple_pages/landing_page'
 
-  root 'products#index'
+  get '/products/:id', to: 'products#show'
+  
+  get '/products', to: 'products#index'
+
+  root 'simple_pages#landing_page'
+
+  #root 'products#index'#
 
   resources :orders, only: [:index, :show, :create, :destroy]
   

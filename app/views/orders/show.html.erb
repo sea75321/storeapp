@@ -1,12 +1,24 @@
-	<div class="row">
-	<% @orders.each do |order| %>
-		<div class="col-sm-2 col-md-4">
-			<h1>
-				Order # <%= order.id %>:
-				<%= link_to order.product.name, order.product %>
-			</h1>
-			<p><%= order.product.description %></p>
-			<strong>$ <%=order.product.price %></strong>
-		</div><!-- /col -->
-	<% end %>
-</div><!-- /row -->
+<div class="row order-detail">
+	<div class="visible-sm-block anchor"></div>
+	<div class="col-xs-12">
+		<h1>
+			Order # <%= @order.id %>
+		</h1>
+		<div class="col-xs-3">
+			<%= image_tag(@order.product.image_url, class: "img-responsive") %>
+		</div>
+		<div class="col-xs-9 order-product-detail">
+		<p>
+			<h3><%= link_to @order.product.name, @order.product %></h3>
+  		<%= @order.product.description %>
+		</p>
+		<p>
+  		<%= number_to_currency(@order.total) %>
+		</p>
+	</div><!-- end order-product-detail -->
+		<div class="anchor"></div>
+    <%= link_to 'Back to Orders Overview', orders_path %>
+	</div><!-- end col -->
+</div><!-- end row order-detail -->
+
+
