@@ -9,4 +9,6 @@ class Product < ApplicationRecord
 		end
 	end
 
+	validates :product image_url, presence: true
+
 end
